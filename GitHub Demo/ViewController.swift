@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       print("Welcome with git")
+        
+        let secondViewController = SecondViewController()
+        print(secondViewController)
     }
 
     override func didReceiveMemoryWarning() {

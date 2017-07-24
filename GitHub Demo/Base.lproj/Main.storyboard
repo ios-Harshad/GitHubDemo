@@ -48,7 +48,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-99.375" y="123.59154929577466"/>
+            <point key="canvasLocation" x="-182" y="120"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="coz-Mx-0bM">
+            <objects>
+                <viewController id="xa0-cz-75P" customClass="SecondViewController" customModule="GitHub_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bJI-si-kva"/>
+                        <viewControllerLayoutGuide type="bottom" id="FC2-JV-SJW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="60r-mZ-1cj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="voP-gs-Tpg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="xa0-cz-75P" id="5Zy-GX-NzO"/>
+                                    <outlet property="delegate" destination="xa0-cz-75P" id="weV-JM-AAv"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="voP-gs-Tpg" firstAttribute="top" secondItem="60r-mZ-1cj" secondAttribute="top" id="IVY-Oj-TKa"/>
+                            <constraint firstItem="FC2-JV-SJW" firstAttribute="top" secondItem="voP-gs-Tpg" secondAttribute="bottom" id="SMv-hc-dR7"/>
+                            <constraint firstAttribute="trailing" secondItem="voP-gs-Tpg" secondAttribute="trailing" id="Ux9-yd-m7v"/>
+                            <constraint firstItem="voP-gs-Tpg" firstAttribute="leading" secondItem="60r-mZ-1cj" secondAttribute="leading" id="yOl-Bv-exU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Var-9T-0NR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="555" y="120.4225352112676"/>
         </scene>
     </scenes>
 </document>
